@@ -1,4 +1,4 @@
-# Kumara Real Estate Portfolio
+# Kumara Real Estate Portfolio Clone
 
 A modern, responsive real estate portfolio website built with React and Tailwind CSS v4. This project showcases luxury properties with an elegant design focused on visual presentation.
 
