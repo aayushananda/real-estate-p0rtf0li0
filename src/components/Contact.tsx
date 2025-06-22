@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 interface FormData {
@@ -22,10 +22,10 @@ const Contact = () => {
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, type } = e.target;
-    const value = type === 'checkbox' 
-      ? (e.target as HTMLInputElement).checked 
+    const value = type === 'checkbox'
+      ? (e.target as HTMLInputElement).checked
       : e.target.value;
-    
+
     setFormData(prev => ({
       ...prev,
       [name]: value
@@ -41,13 +41,13 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left Side - Contact Form */}
-      <div className="w-full md:w-1/2 bg-white p-8 md:p-12 flex flex-col justify-center">
-        <div className="max-w-md mx-auto w-full">
-          <p className="text-gray-600 text-sm mb-8">
+      <div className="w-full md:w-1/2 bg-white p-8 md:p-16 flex flex-col justify-center">
+        <div className="max-w-lg mx-auto w-full">
+          <p className="text-gray-600 text-base mb-8 font-light">
             Let me know how I can assist you.
           </p>
           
-          <h1 className="text-4xl font-light text-gray-800 mb-12 tracking-wide">
+          <h1 className="text-5xl font-light text-gray-800 mb-12 tracking-wide" style={{ fontFamily: 'Playfair Display, serif' }}>
             GET IN TOUCH
           </h1>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={handleInputChange}
-                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-gray-500"
+                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-500 bg-gray-50"
                 required
               />
               <input
@@ -69,7 +69,7 @@ const Contact = () => {
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleInputChange}
-                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-gray-500"
+                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-500 bg-gray-50"
                 required
               />
             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                 placeholder="Email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-gray-500"
+                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-500 bg-gray-50"
                 required
               />
               <input
@@ -91,7 +91,7 @@ const Contact = () => {
                 placeholder="Phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-gray-500"
+                className="flex-1 p-4 border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-500 bg-gray-50"
               />
             </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleInputChange}
               rows={6}
-              className="w-full p-4 border border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-gray-500 resize-none"
+              className="w-full p-4 border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-500 resize-none bg-gray-50"
               required
             />
 
@@ -132,7 +132,7 @@ const Contact = () => {
             <div className="pt-6">
               <button
                 onClick={handleSubmit}
-                className="w-full py-4 border-2 border-gray-800 text-gray-800 font-light tracking-wider hover:bg-gray-800 hover:text-white transition-colors duration-300"
+                className="w-full py-4 border-2 border-gray-800 text-gray-800 font-light tracking-wider hover:bg-gray-800 hover:text-white transition-colors duration-300 bg-white"
               >
                 SUBMIT
               </button>
@@ -142,47 +142,45 @@ const Contact = () => {
       </div>
 
       {/* Right Side - Profile and Background */}
-      <div 
-        className="w-full md:w-1/2 relative min-h-[600px] md:min-h-screen"
-        style={{
-          backgroundImage: 'url("/counter2.jpeg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'scroll'
-        }}
-      >
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        
+      <div className="w-full md:w-1/2 relative min-h-[600px] md:min-h-screen">
+        {/* Background Image */}        
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'url("/counter2.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            zIndex: 0
+          }}
+        ></div>
+        {/* Light Grey Overlay */}
+        <div className="absolute inset-0 bg-gray-700/50 z-10"></div>
         {/* Content */}
-        <div className="relative z-10 h-full flex flex-col justify-between p-12 text-white">
+        <div className="relative z-20 h-full flex flex-col justify-between p-12 text-white">
           {/* Top Section - Name and Contact Info */}
-          <div>
-            <h2 className="text-4xl font-light tracking-wider mb-8">
+          <div className="pt-8">
+            <h2 className="text-4xl font-bold tracking-widest mb-12 text-center" style={{ fontFamily: 'Playfair Display, serif', letterSpacing: '0.2em' }}>
               KUMARA WILCOXON
             </h2>
             
-            <div className="space-y-2 mb-8">
-              <p className="text-lg">kumara@sothebysrealty.com</p>
-              <p className="text-lg">512.423.5035</p>
+            <div className="text-center space-y-4 mb-12">
+              <p className="text-lg font-semibold">kumara@sothebysrealty.com</p>
+              <p className="text-xl font-semibold">512.423.5035</p>
             </div>
-            <div className="space-y-1">
-              <p className="text-lg">524 N Lamar Blvd #204</p>
-              <p className="text-lg">Austin TX 78703</p>
+            
+            <div className="text-center space-y-2">
+              <p className="text-lg font-semibold">524 N Lamar Blvd #204</p>
+              <p className="text-lg font-semibold">Austin TX 78703</p>
             </div>
           </div>
 
-          {/* Bottom Section - Social Media and Profile Photo */}
-          <div className="flex justify-between items-end">
-            {/* Social Media Icons */}
-            <div className="flex space-x-6">
-              <Facebook className="w-6 h-6 hover:text-gray-300 cursor-pointer transition-colors" />
-              <Instagram className="w-6 h-6 hover:text-gray-300 cursor-pointer transition-colors" />
-              <Linkedin className="w-6 h-6 hover:text-gray-300 cursor-pointer transition-colors" />
-              <Youtube className="w-6 h-6 hover:text-gray-300 cursor-pointer transition-colors" />
-            </div>
-            
-
+          {/* Bottom Section - Social Media Icons */}
+          <div className="flex justify-center space-x-8 pb-8">
+            <Facebook className="w-8 h-8 hover:text-gray-300 cursor-pointer transition-colors" />
+            <Instagram className="w-8 h-8 hover:text-gray-300 cursor-pointer transition-colors" />
+            <Linkedin className="w-8 h-8 hover:text-gray-300 cursor-pointer transition-colors" />
+            <Youtube className="w-8 h-8 hover:text-gray-300 cursor-pointer transition-colors" />
           </div>
         </div>
       </div>
