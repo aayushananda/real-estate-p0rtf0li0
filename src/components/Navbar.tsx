@@ -38,8 +38,8 @@ const Navbar: React.FC = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         {/* Logo */}
-        <a href="/" className="logo-text">
-          KUMARA
+        <a href="/" className="logo-text sd:font-serif" onClick={closeMenu}>
+          TAZ MOHAMMAD
         </a>
 
         {/* Navigation Links - Desktop */}
@@ -61,30 +61,27 @@ const Navbar: React.FC = () => {
             <li>
               <a href="#about" onClick={closeMenu}>
                 <span>ABOUT</span>
-                <div className="dropdown-icon">▼</div>
+               
               </a>
             </li>
             <li>
               <a href="#properties" onClick={closeMenu}>
                 <span>PROPERTIES</span>
-                <div className="dropdown-icon">▼</div>
+            
               </a>
             </li>
-           
             <li>
               <a href="#search" onClick={closeMenu}>
                 <span>HOME SEARCH</span>
-                <div className="dropdown-icon">▼</div>
+               
               </a>
             </li>
             <li>
               <a href="#communities" onClick={closeMenu}>
                 <span>COMMUNITIES</span>
-                <div className="dropdown-icon">▼</div>
+        
               </a>
             </li>
-            
-           
           </ul>
         </nav>
 

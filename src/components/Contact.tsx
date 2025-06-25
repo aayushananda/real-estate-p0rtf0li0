@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row">
+    <div className="min-h-screen flex-col md:flex-row hidden md:flex">
       {/* Left Side - Contact Form */}
       <div className="w-full md:w-1/2 bg-white p-8 md:p-16 flex flex-col justify-center">
         <div className="max-w-lg mx-auto w-full">
@@ -118,13 +118,9 @@ const Contact = () => {
                 required
               />
               <label htmlFor="consent" className="text-xs text-gray-600 leading-relaxed">
-                By providing Kumara Wilcoxon* your contact information, you acknowledge and 
-                agree to our Privacy Policy and consent to receiving marketing communications, 
-                including through automated calls, texts, and emails, some of which may use 
-                artificial or prerecorded voices. This consent isn't necessary for purchasing any 
-                products or services and you may opt out at any time. To opt out from texts, you 
-                can reply 'stop' at any time. To opt out from emails, you can click on the 
-                unsubscribe link in the emails. Message and data rates may apply.
+            By providing Taz Mohammed with your contact information, you acknowledge and agree to our Privacy Policy and consent to receive marketing communications related to Dubai real estate opportunities. These communications may include emails, calls, or text messages—some of which may be automated or use prerecorded content. Your consent is not a condition for purchasing any property or service, and you may opt out at any time. To stop receiving texts, simply reply 'STOP'. To unsubscribe from emails, click the unsubscribe link provided. Standard messaging and data rates may apply.
+
+
               </label>
             </div>
 
@@ -161,17 +157,17 @@ const Contact = () => {
           {/* Top Section - Name and Contact Info */}
           <div className="pt-8">
             <h2 className="text-4xl font-bold tracking-widest mb-12 text-center" style={{ fontFamily: 'Playfair Display, serif', letterSpacing: '0.2em' }}>
-              KUMARA WILCOXON
+              TAZ MOHAMMAD
             </h2>
             
             <div className="text-center space-y-4 mb-12">
-              <p className="text-lg font-semibold">kumara@sothebysrealty.com</p>
-              <p className="text-xl font-semibold">512.423.5035</p>
+              <p className="text-lg font-semibold">email@gmail.com</p>
+              <p className="text-xl font-semibold">(+971) 1234567</p>
             </div>
             
             <div className="text-center space-y-2">
-              <p className="text-lg font-semibold">524 N Lamar Blvd #204</p>
-              <p className="text-lg font-semibold">Austin TX 78703</p>
+              <p className="text-lg font-semibold">Address line</p>
+              <p className="text-lg font-semibold">Address line</p>
             </div>
           </div>
 

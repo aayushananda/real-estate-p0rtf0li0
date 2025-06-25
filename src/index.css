@@ -82,7 +82,7 @@
   
   .navbar.scrolled {
     @apply py-3 shadow-md;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color:#0D1424;
     backdrop-filter: blur(8px);
   }
   

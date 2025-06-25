@@ -13,7 +13,8 @@ const Parallax = () => {
     color: 'white',
     textAlign: 'center',
     flexDirection: 'column',
-    padding: '0 1rem'
+    padding: '0 1rem',
+    zIndex: 5,
   };
 
   const headingStyle = {
@@ -31,12 +32,14 @@ const Parallax = () => {
   };
 
   return (
-    <div style={containerStyle}>
-      <h1 style={headingStyle}>Parallax Effect</h1>
+    <div className="bg-gray-700/50 z-10" style={containerStyle}>
+       {/* Light Grey Overlay */}
+        <div className="absolute inset-0 z-20"></div>
+      <h1 style={headingStyle}>Client First Policy</h1>
       <p style={paragraphStyle}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-        ratione vitae, suscipit molestias at magni necessitatibus voluptate 
-        blanditiis nulla excepturi nisi provident illum.
+        Taz’s business is built almost entirely on referrals and repeat clients—a testament to his
+commitment to delivering outstanding results. He listens to understand each client's unique
+needs and tailors his services to provide a smooth, stress-free, and successful experience.
       </p>
     </div>
   );

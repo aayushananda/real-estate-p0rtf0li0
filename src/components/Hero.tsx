@@ -76,11 +76,8 @@ const Hero = () => {
       {/* Status indicator */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 text-center">
         <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
-          Welcome to the Hero Section
+          TAZ MOHAMMAD
         </h1>
-        <p className="text-white/90 text-lg max-w-2xl">
-          Video background with sound control
-        </p>
       </div>
     </section>
   );

@@ -9,20 +9,20 @@ const About = () => {
         {/* Top heading section */}
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-2 tracking-tight">
-            AUSTIN'S #1 LUXURY REAL ESTATE AGENT
+            DUBAI'S #1 LUXURY REAL ESTATE SPECIALIST
           </h1>
           <p className="uppercase tracking-widest text-gray-500 mt-2 text-sm">
-            THE LAST 5 CONSECUTIVE YEARS
+            THE LAST 7 CONSECUTIVE YEARS
           </p>
         </div>
 
         {/* Brief introduction */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
+        {/* <div className="max-w-4xl mx-auto text-center mb-20">
           <p className="text-gray-700 text-lg leading-relaxed">
             With over 20 years of experience, Kumara Wilcoxon is the face of Austin's luxury
             real estate market, with unparalleled passion and commitment to the Austin Lifestyle.
           </p>
-        </div>
+        </div> */}
 
         {/* Main content grid - Modified width and height */}
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-0 items-stretch px-8">
@@ -33,12 +33,12 @@ const About = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img 
-              src="/About2.png" 
+              src="/About1.png" 
               alt="Kumara Wilcoxon" 
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
             />
             <img 
-              src="/About1.png"
+              src="/Abou2.jpg"
               alt="Kumara Wilcoxon Alternative" 
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
             />
@@ -51,23 +51,23 @@ const About = () => {
           >
             <div className="max-w-lg">
               <h2 className="text-3xl md:text-4xl font-serif font-medium mb-8 leading-tight tracking-tight">
-                MEET KUMARA<br />WILCOXON
+                MEET TAZ MOHAMMAD
               </h2>
               
               <div className="space-y-4 mb-12 text-black leading-relaxed">
                 <p>
-                  With over 20 years of experience, Kumara Wilcoxon is the face of Austin's
-                  luxury real estate market, with unparalleled passion and commitment to the
-                  Austin Lifestyle. As the #1 agent in Austin, TX, the #1 agent worldwide for
-                  Sotheby's International Realty, and the 2024 winner of the Inman Golden i,
-                  Kumara has sold over $2.5 Billion throughout her career.
+                 Taz Mohammed is a leading force in Dubai’s competitive real estate market, with over 7 years of experience and a transaction portfolio exceeding $30 million. Known for his sharp market intelligence and results-driven approach, Taz has successfully guided more than 60 clients from around the world through high-stakes property deals across Dubai’s most coveted communities. From first-time buyers to seasoned investors, his expertise spans off-plan investments, luxury rentals, and secondary market acquisitions—each tailored with precision and insight.
                 </p>
                 <p>
-                  Consistently honored among Austin's select multi-million dollar producers, she has been
-                  ranked #1 by Austin Business Journal for Residential Real Estate Agents for the last five
-                  consecutive years and is a distinguished member of both Austin's Elite 25,
-                  Sotheby's International Realty Market Leaders, Métier Maison, Sotheby's
-                  International Realty's Top 100, and Luxury League.
+                  Recognized for his client-first philosophy and strategic acumen, 
+                  Taz blends integrity with a deep understanding of Dubai’s real estate pulse. 
+                  Backed by strong developer networks, legal expertise, and a command over ROI analytics, 
+                  he delivers a seamless, data-informed experience from consultation to close. 
+                  For those seeking trusted guidance and exceptional outcomes, 
+                  Taz Mohammed isn’t just a consultant—he’s your partner in building legacy through real estate.
+
+
+                 
                 </p>
               </div>
               

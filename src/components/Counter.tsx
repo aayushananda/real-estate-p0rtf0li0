@@ -5,8 +5,8 @@ const Counter: React.FC = () => {
   const [billionCount, setBillionCount] = useState<number>(0);
   const [millionCount, setMillionCount] = useState<number>(0);
   const [isInView, setIsInView] = useState<boolean>(false);
-  const targetBillions: number = 2.5;
-  const targetMillions: number = 389;
+  const targetBillions: number = 30;
+  const targetMillions: number = 60;
   
   // Set up intersection observer with lower threshold
   useEffect(() => {
@@ -83,12 +83,10 @@ const Counter: React.FC = () => {
             PROVEN RESULTS
           </h2>
           <p className="uppercase tracking-widest text-white text-xs mt-3 mb-8">
-            CONSISTENTLY HONORED AMONG AUSTIN'S SELECT MULTI-MILLION DOLLAR PRODUCERS
+           CONSISTENTLY TRUSTED BY INTERNATIONAL CLIENTS IN DUBAI’S HIGH-STAKES PROPERTY MARKET
           </p>
           <p className="max-w-3xl text-white/90 text-center mx-auto text-lg leading-relaxed">
-            With over 20 years of experience, Kumara Wilcoxon is the face of Austin's luxury real estate market, 
-            with unparalleled passion and commitment to the Austin Lifestyle. As the #1 Realtor in Austin, TX for the last 5
-            consecutive years, Kumara has sold over $2 Billion throughout her career.
+            With over 7 years of experience, Taz Mohammed stands as a trusted authority in Dubai’s real estate landscape—known for his strategic insight, transparent dealings, and commitment to client success. From luxury rentals to investment-grade assets, Taz has delivered results that speak volumes.
           </p>
         </div>
       </div>
@@ -100,10 +98,28 @@ const Counter: React.FC = () => {
           <div className="text-white space-y-10">
             <div className="mb-12">
               <div className="text-5xl md:text-6xl font-serif font-medium">
-                ${billionCount}B
+                ${billionCount}M+
               </div>
               <p className="text-white/70 uppercase tracking-wider text-sm mt-2">
-                in Career Sales
+                in Closed Transactions
+              </p>
+            </div>
+            
+            <div className="mb-12">
+              <div className="text-5xl md:text-6xl font-serif font-medium">
+                7+ Years
+              </div>
+              <p className="text-white/70 uppercase tracking-wider text-sm mt-2">
+                of Dubai Market Expertise
+              </p>
+            </div>
+            
+            <div className="mb-12">
+              <div className="text-5xl md:text-6xl font-serif font-medium">
+                {millionCount}+
+              </div>
+              <p className="text-white/70 uppercase tracking-wider text-sm mt-2">
+                Clients Successfully Served
               </p>
             </div>
             
@@ -112,25 +128,7 @@ const Counter: React.FC = () => {
                 #1
               </div>
               <p className="text-white/70 uppercase tracking-wider text-sm mt-2">
-                Realtor in Austin
-              </p>
-            </div>
-            
-            <div className="mb-12">
-              <div className="text-5xl md:text-6xl font-serif font-medium">
-                ${millionCount}M
-              </div>
-              <p className="text-white/70 uppercase tracking-wider text-sm mt-2">
-                Total Sales in 2023
-              </p>
-            </div>
-            
-            <div className="mb-12">
-              <div className="text-5xl md:text-6xl font-serif font-medium">
-                #1
-              </div>
-              <p className="text-white/70 uppercase tracking-wider text-sm mt-2">
-                Sotheby's International Realty Agent Worldwide
+                Trusted Advisor Across Investor Networks
               </p>
             </div>
           </div>
